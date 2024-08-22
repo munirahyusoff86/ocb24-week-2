@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FLEX</title>
+    <style>
+        .box {
+            border: 1px solid red;
+            min-height: 50px;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box" style="display: flex; flex-direction: column; border-color: blue; gap: 16px;"> 
+        <div class="box" style="display: flex; flex-direction: column; border-color: red; gap: 16px;">  1
+            <div class="box" style="border-color: green;">  </div>
+           <!-- <div class="box" style="display: flex; flex-direction: row; flex-wrap: wrap; justify-content:center; height: 400px; align-items: baseline; gap: 16px;"> -->    
+               <div class="box" style="display: flex; flex-flow: row wrap; justify-content:center; height: 400px; align-items: baseline; gap: 16px;">  <!-- Combine flex-direction: & flex-wrap into flex-flow:row wrap-->
+
+                <div class="box" style="border-color: purple">  
+                    Munirah
+                </div>
+                <div class="box" style="border-color: purple">  
+                    Aliyah
+                </div>
+                <div class="box" style="border-color: purple">  
+                    Zara
+                </div>
+                <div class="box" style="border-color: purple">  
+                    Fatihah
+                </div>
+                <div class="box" style="border-color: purple">  
+                    Imran
+                </div>
+            </div>
+            <div class="box" style="display: flex; flex-direction: row; flex-wrap: wrap; border-color: green; gap: 16px;">  
+               <!--  <div class="box" style="border-color: cyan; flex-grow: 1; flex-shrink: 50;">  --> 
+                <div class="box" style="border-color: cyan; flex:1 1 400px"> <!-- Combine flex:grow shrink basis -->
+                </div>
+                <div class="box" style="display: flex; flex-direction: column; border-color: cyan; gap: 16px; flex-grow: 400px;">  
+                    <div class="box" style="border-color: brown;">  
+                    </div>
+                    <div class="box" style="border-color: brown;">  
+                    </div>
+                    <div class="box" style="border-color: brown;">  
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="box" style="border-color: red;"> 2 </div>
+    </div>
+
+    
+</body>
+</html>
